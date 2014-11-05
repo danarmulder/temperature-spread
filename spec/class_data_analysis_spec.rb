@@ -12,7 +12,7 @@ describe ClassDataAnalysis do
     end
   end
 
-  xdescribe '#highest_temperature' do
+  describe '#highest_temperature' do
     it "returns the highest number in the second entry of all the nested arrays" do
       expect(analyzer.highest_temperature).to be == 97
     end
