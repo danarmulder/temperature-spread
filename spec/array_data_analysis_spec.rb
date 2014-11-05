@@ -15,7 +15,7 @@ describe ArrayDataAnalysis do
     end
   end
 
-  xdescribe '#day_of_lowest_temperature' do
+  describe '#day_of_lowest_temperature' do
     it "return the day corresponding to the lowest temperature (first column in nested array)" do
       expect(analyzer.day_of_lowest_temperature).to be == 9
     end

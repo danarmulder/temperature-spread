@@ -19,5 +19,13 @@ class ClassDataAnalysis
     high_temps.max
   end
 
-  
+  def day_of_lowest_temperature
+    low_day = 0
+    @temp_data.each do |temp|
+       if temp.low == lowest_temperature
+         low_day = temp.day
+       end
+    end
+    low_day
+  end
 end

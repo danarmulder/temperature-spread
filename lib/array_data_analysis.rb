@@ -19,4 +19,10 @@ class ArrayDataAnalysis
     end
     high_temp.max
   end
+
+  def day_of_lowest_temperature
+    low_day = @temperatures.select {|day| day.include?(lowest_temperature)}
+    low_day[0][0]
+  end
+
 end
