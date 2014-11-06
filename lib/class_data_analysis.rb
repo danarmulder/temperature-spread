@@ -28,4 +28,22 @@ class ClassDataAnalysis
     end
     low_day
   end
+
+  def day_of_highest_temperature
+    high_day = 0
+    @temp_data.each do |temp|
+       if temp.high == highest_temperature
+         high_day = temp.day
+       end
+    end
+    high_day
+  end
+
+  def average_temperatures
+    avg_temp = []
+    @temp_data.each do |temp|
+      avg_temp << (temp.low+temp.high)/2.0
+    end
+  avg_temp
+  end
 end
